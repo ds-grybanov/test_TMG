@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test_Top Media Groups</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+  <main class="main">
+    <section class="page__1">
+      <div class="page__1-cube-left">
+        <img class="cube__left-img" src="./assets/img/bg-forms/section_1-svg_2.svg" alt="cube">
+      </div>
+      <div class="page__1-cube-top">
+        <img class="cube__top-img" src="./assets/img/bg-forms/section_1-svg_1.svg" alt="cube">
+      </div>
+      <div class="page__1-cube-right">
+        <img class="cube__right-img" src="./assets/img/bg-forms/section_1-svg_3.svg" alt="cube">
+      </div>
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="inner-page-1__logo col-sm-5 col-xl-3 col-lg-3 col-md-3">
+              <img class="logo-img" src="./assets/img/logo.svg" alt="logo">
+              <a class="logo-link" href="#"></a>
+            </div>
+            <div class="inner-page-1__title col-sm-12">
+              <h1 class="title">Find the<span> best place <br>to rest </span>while traveling</h1>
+            </div>
+            <div class="inner-page-1__btn col-sm-5 ">
+              <a class="btn-registration" href="#page__2-link">Registration</a>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section id="page__2-link" class="page__2">
+      <div class="page__2-cube-left">
+        <img class="cube__left-img" src="./assets/img/bg-forms/section_2-svg_1.svg" alt="cube">
+      </div>
+      <div class="page__2-cube-top">
+        <img class="cube__top-img" src="./assets/img/bg-forms/section_2-svg_2.svg" alt="cube">
+      </div>
+      <div class="page__2-cube-right">
+        <img class="cube__right-img" src="./assets/img/bg-forms/section_2-svg_3.svg" alt="cube">
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="form__title">
+            <a class="form__title-text" href="#">Sign Up</a>
+            <span class="title-text-link">and find the best place to rest while traveling</span>
+          </div>
+        </div>
+        <form class="form" id="form" action="" novalidate>
+          <div class="row justify-content-center">
+            <div class="col-sm-6 col-lg-4 col-md-5 col-xl-4 form__item">
+              <img class="form__item-icon" src="./assets/img/icons/first-name_icon.svg" alt="icon">
+              <input class="input" id="first-name" type="text" data-min="2" required></input>
+              <label class="label">First Name</label>
+              <span class="error-msg">The name must be more than 2 characters</span>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-md-5 col-xl-4 form__item">
+              <img class="form__item-icon" src="./assets/img/icons/second-name_icon.svg" alt="icon">
+              <input class="input" id="second-name" type="text" data-min="2" required></input>
+              <label class="label">Second Name</label>
+              <span class="error-msg">The name must be more than 2 characters</span>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-sm-6 col-lg-4 col-md-5 col-xl-4 form__item ">
+              <img class="form__item-icon" src="./assets/img/icons/country_icon.svg" alt="icon">
+              <select class="nice-select" id="select" required>
+                <option value="" disabled selected></option>
+                <option value="af">Afghanistan</option>
+                <option value="alb">Albania</option>
+                <option value="alg">Algeria</option>
+                <option value="and">Andorra</option>
+              </select>
+              <label class="label">Country</label>
+              <span class="error-msg">Fill in the field</span>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-md-5 col-xl-4 form__item ">
+              <img class="form__item-icon" src="./assets/img/icons/phone_icon.svg" alt="icon">
+              <input class="input" id="phone" type="tel" required></input>
+              <label class="label">Phone</label>
+              <span class="error-msg">Fill in the field</span>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-sm-6 col-lg-4 col-md-5 col-xl-4 form__item">
+              <img class="form__item-icon" src="./assets/img/icons/password_icon.svg" alt="icon">
+              <input class="input" id="password" type="password" required></input>
+              <label class="label">Password</label>
+              <span class="error-msg">Password must have 1 letter, 1 number and one symbol</span>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-md-5 col-xl-4 form__item">
+              <img class="form__item-icon" src="./assets/img/icons/confirm-password_icon.svg" alt="icon">
+              <input class="input" id="password2" type="password" required></input>
+              <label class="label">Confirm password</label>
+              <span class="error-msg">Password does not match</span>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-sm-6 col-lg-4 col-md-5 col-xl-4 form__item">
+              <img class="form__item-icon" src="./assets/img/icons/email_icon.svg" alt="icon">
+              <input class="input" id="email" type="text" required></input>
+              <label class="label">Email</label>
+              <span class="error-msg">Email is not correct</span>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-md-5 col-xl-4 form__item checked__item">
+              <input class="input-check" id="checkbox" type="checkbox" required >
+              <label for="checkbox" class="checkbox"></label>
+              <span>I agree to the &nbsp;</span>
+              <a href="#">Terms & Conditions</a></input>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-lg-3 col-md-4 col-xl-3 offset-md-1 offset-lg-2 offset-xl-2 page__2-btn">
+              <button type="submit" class="sign-up__btn">Sign Up</button>
+            </div>
+          </div>
+          </form>
+        </div>
+        <div class="page__2-bottom-link">
+          <span>If you have an account,&nbsp; </span>
+          <a href="#">Log In</a>
+        </div>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  <script src="js/main.min.js">
+  </script>
+</body>
+</html>
